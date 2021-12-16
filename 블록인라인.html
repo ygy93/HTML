@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>블록요소, 인라인요소</title>
+	<style>
+		h1
+		{
+			color:#00f; /* 글자색을 파란색으로 변경 */
+			background:#ff0; /* 배경색 */
+			width:800px; /* 너비를 800픽셀로 변경 */
+		}
+		p
+		{
+			color:#f00;
+			background:#fcf;
+		}
+		span
+		{
+			color:#ccc;
+			background:#333;
+			width:500px; /* 인라인요소 이므로 너비, 높이 값을 넣을 필요가 없음. */
+		}
+		i
+		{
+			background:#ddd;
+		}
+		div
+		{
+			background:#cff;
+		}
+	</style>
+</head>
+<body>
+	<h1>블록요소와 인라인요소의 개념</h1>
+	<p>문장을 쓸때 사용하는 태그</p>
+	<span>문장의 일부분을 수정</span>
+	<i>글자를 기울일때 사용</i>
+	<div>그룹을 묶어줄 때 사용</div>
+	<!--
+	주석문 : 설명을 적을 수 있음.
+	h1~h6 : 머릿글, 제목
+
+	블록요소 : [h, p, div]
+	1. 부모너비의 100% 크기를 가진다. 
+	2. 자기외에는 다른 형제요소가 올라올 수 없다.
+	인라인요소 : [span, i]
+	1. (자식이 있다면 해당 내용만큼 너비를 가지지만) 너비, 높이가 없음.
+	2. 형제요소가 인라인요소라면 옆으로 올라올 수 있다.
+
+	요소에 배경색을 지정하여 블록과 인라인요소를 구별
+	-->
+</body>
+</html>
