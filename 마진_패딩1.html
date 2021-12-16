@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>마진_패딩</title>
+	<style>
+		*
+		{ /* 모든 요소, 에릭마이어 reset.css */
+			margin:0;
+			padding:0; /* 기본적으로 여백들을 초기화 시키겠다. */
+		}
+		div
+		{
+			background:#ff0;
+			border:3px solid #f00; /* border 선 */
+			width:300px;
+			height:200px;
+
+			padding:50px; /* 상 하 좌 우 */
+			padding-left:70px; /* 왼쪽 여백 */ 
+			padding-top:100px; /* 위쪽 여백 */
+			padding-right:20px; /* 오른쪽 여백 */
+			padding-bottom:40px; /* 아래쪽 여백 */
+
+			padding:50px; /* 상 하 좌 우 */
+			padding:30px 50px; /* 상하 좌우 */
+			padding:20px 60px 50px; /* 상 좌우 하 */
+			padding:10px 20px 30px 40px; /* 상 우 하 좌 */
+			/* 같은 패딩 종류일 경우 마지막 맨 아래 적은 코드로 적용 */
+
+			padding:80px 0;
+
+			margin:40px;
+			margin:50px 60px;
+			margin:80px 50px 40px;
+			margin:20px 50px 60px 50px;
+
+			/*
+			[안쪽]
+			위쪽여백 : 50
+			왼쪽여백 : 80
+			오른쪽 여백 : 50
+			아래쪽 여백 : 50
+			*/
+			padding:50px 50px 50px 80px;
+
+			padding:50px;
+			padding-left:80px;
+		}
+	</style>
+</head>
+<body>
+	<div>div</div>
+</body>
+</html>
