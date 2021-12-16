@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스모델링</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+		div
+		{
+			background:#ff0;
+			width:300px; /* 콘텐츠 너비 (콘텐츠를 넣을 수 있는 길이) */
+			height:150px; /* 콘텐츠 높이 */
+			border:5px solid #f00;
+			padding:20px;
+			margin:40px 30px;
+		}
+		/*
+		콘텐츠너비 : width
+		전체너비(410) : 콘텐츠너비(300) + 좌우보더(10) + 좌우마진(60) + 좌우패딩(40)
+		*/
+		p
+		{
+			background:#cff;
+			width:250px;
+			height:100px;
+			border:4px solid #ccc;
+			padding:20px 30px;
+			margin:40px 50px 20px;
+		}
+		/*
+		전체너비(418) : 콘텐츠너비(250) + 좌우보더(8) + 좌우마진(100) + 좌우패딩(60)
+		*/
+		h1
+		{
+			background:#fcf;
+			width: 300px;
+			padding:30px 40px 20px 50px;
+			margin:40px 50px;
+			width: 200px;
+			border:6px solid #cff;
+			padding-right:30px;
+		}
+		/*
+		전체너비(392) : 콘텐츠너비(200) + 좌우보더(12) + 좌우마진(100) + 좌우패딩(80)
+		*/
+		h2
+		{
+			background: #ffc;
+			border:2px solid #ccc;
+			width: 360px;
+			height: 200px;
+			margin:20px 40px 30px 60px;
+			padding-right:20px;
+			border-right:4px dashed #000;
+			padding:40px 50px;
+			margin-top:40px;
+		}
+		/*
+		전체너비(566) : 콘텐츠너비(360) + 좌우보더(6) + 좌우마진(100) + 좌우패딩(100)
+		전체높이(354) : 콘텐츠높이(200) + 상하보더(4) + 상하마진(70) + 상하패딩(80)
+		*/
+	</style>
+</head>
+<body>
+	<div>div div div div div div div div div div div div div div
+	div div div div div div div div div div div div div div</div>
+
+	<p>p요소</p>
+
+	<h1>헤딩요소</h1>
+
+	<h2>헤딩요소2</h2>
+</body>
+</html>
