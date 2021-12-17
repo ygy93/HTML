@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float활용</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+		section
+		{
+			background: #ccc;
+		}
+		section:after
+		{
+			content:""; /* after 를 사용하면 반드시 넣어줘야 하는 필수 속성 */
+			clear:both; /* float 을 해제 */
+			display:block; /* clear 를 적용하기 위해 블록요소로 변경 */
+		}
+		div
+		{
+			width: 100px;
+			height: 100px;
+			background: #ff0;
+		}
+		.box1
+		{
+			background: #f00;
+			float:left;
+		}
+		.box2
+		{
+			background: #0f0;
+			float:left;
+		}
+		.box3
+		{
+			background: #00f;
+			float:left;
+		}
+		/*
+		float 적용
+		1. 해당 요소는 그 자리에서 뜬다.
+		2. 부모가 자식의 높이값을 인지하지 못함.
+		3. 인라인 요소에 float 을 주면 자동으로 block 요소로 바뀜
+		4. 너비를 적용하지 않으면 자동으로 줄어든다.
+
+		float 해제 - 부모가 float된 자식의 높이값을 인지
+		float 이 적용된 요소(div)의 직계부모(section)에게 : after 를 적용
+		content:""; clear:both; display:block;
+		*/
+	</style>
+</head>
+<body>
+	<section>
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box3">box3</div>
+	</section>
+</body>
+</html>
