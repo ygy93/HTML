@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>클래스_아이디</title>
+	<style>
+		p
+		{
+			background: #ff0;
+		}
+		.text /* class text를 찾아라 */
+		{
+			font-size:32px;
+		}
+		#msg
+		{
+			color:#f00;
+		}
+	</style>
+</head>
+<body>
+	<p>문장을 담는 요소</p>
+	<p class="text">두번째 문장</p> <!-- class 는 별명, "" 안의 text는 별명 값 -->
+	<p id="msg">세번째 문장</p>
+	<p class="text">네번째 문장</p>
+	<p id="msg">다섯번째 문장</p> <!-- 동일한 id 를 쓰면 안됨 -->
+	<!--
+	1. 클래스, 아이디를 넣을때 반드시 영문이 먼저 와야함.
+	2. 대소문자를 가리기 때문에 되도록 소문자 위주로 작업
+	3. 네이밍을 적용할 경우 의미를 부여해서 적용.
+	4. 카멜공식 Ex> boyfriend -> boyFriend (boy_friend)
+
+	클래스(class)와 아이디(id)는 각 요소의 별명
+	차이점
+	class 는 한 문서에 다중적용이 가능
+	id 는 한 문서당 한번만 적용 (다중적용 금지)
+	-->
+</body>
+</html>
