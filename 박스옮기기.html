@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스옮기기</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+		section
+		{
+			width: 1200px;
+			background: #ccc;
+			margin:0 auto; /* 블록 요소를 가운데 정렬 */
+		}
+		section:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		div
+		{
+			background: #ff0;
+			float:left;
+			width: 270px;
+			height: 200px;
+			margin-right:40px;
+		}
+		.box4
+		{
+			margin-right:0px;
+		}
+		/*
+		float 적용
+		1. 해당 요소는 자리에서 뜬다.
+		2. 부모가 자식의 높이값을 인지하지 못한다.
+		3. 너비가 줄어든다.
+
+		float 해제
+		float 이 적용된 요소의 직계부모에 after 를 적용
+		*/
+	</style>
+</head>
+<body>
+	<section>
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box3">box3</div>
+		<div class="box4">box4</div>
+	</section>
+</body>
+</html>
