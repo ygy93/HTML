@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>font</title>
+	<style>
+		body
+		{
+			font-family:돋움;
+		}
+		p
+		{
+			color:#f00;
+			font-size:24px;
+			line-height:1.6; /* 줄(행) 간격 (1.6 일반적) */
+			font-weight:bold; /* 글자의 두께 설정 : 100 ~ 900 */
+			font-style:italic; /* 기울임 */
+			font-family:궁서 돋움 굴림; /* 글꼴 */
+			letter-spacing:-2px; /* 글자 간격 */
+
+			font:bold italic 32px/1.8 굴림; /* 크기, 글꼴 필수 작성 */
+		}
+		div
+		{ /* 글자와 관련된 속성은 상속이 가능하다 */
+			font-size:30px;
+			font-family:궁서;
+			color:#00f;
+			text-align:center; /* 정렬 */
+			text-decoration:underline; /* 밑줄 */
+			text-transform:uppercase; /* 소문자를 대문자로 일괄 변경 */
+		}
+	</style>
+</head>
+<body>
+	<p>안녕하세요.<br>만나서 반갑습니다.</p>
+	<div>
+		<span>안녕</span>
+	</div>
+</body>
+</html>
