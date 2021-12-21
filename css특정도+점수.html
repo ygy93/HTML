@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css특정도 점수</title>
+	<style>
+		p /* 1점 */
+		{
+			color:#f00;
+		}
+		p
+		{
+			color:#00f;
+		}
+		div p /* 2점 */
+		{	/* 자손선택 (div 안에 있는 자식 p 를 선택) */
+			color:#fcf;
+		}
+		p
+		{
+			color:#00f;
+		}
+		
+		section div p /* 3점 */
+		{
+			color:#cff;
+		}
+		.box p /* 11점 */
+		{
+			color:#f00;
+		}
+		#text /* 100점 */
+		{
+			color:#ff0;
+		}
+		section .box #text
+		{
+			background: #ddd;
+		}
+		p
+		{
+			background: #f00 !important;
+		}
+		/*
+		같은 요소가 나열될 경우엔 아래의 요소가 우선적으로 적용된다.
+
+		DOM (Document Object Model) 구조 -> 족보
+		
+		특정도 점수 (실제로 있는 점수는 아님)
+		요소명 : 1점
+		클래스 : 10점
+		아이디 : 100점
+		인라인 : 1000점 (권장하지 않음)
+		!important : 10000점 (권장하지 않음)
+		*/
+		section > p /* > 는 자식선택 */
+		{
+			font-size:40px;
+			color:#fff;
+		}
+		section > div > p
+		{
+			font-style:italic;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="box">
+			<p id="text" style="background: #333;">text</p>
+		</div>
+		<p>두번째 text</p>
+	</section>
+</body>
+</html>
