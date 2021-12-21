@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스만들기3</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+		header
+		{
+			width: 800px;
+			height: 100px;
+			background: #f00;
+			margin:0 auto;
+		}
+		section
+		{
+			width: 800px;
+			background: #fcf;
+			margin:0 auto;
+			padding:100px 0;
+		}
+		section .wrap:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		/*
+		section div
+		{
+			width: 240px;
+			height: 400px;
+			background: #aaa;
+			margin:100px 0px;
+			float:left;
+		}
+		*/
+		section .wrap
+		{
+			width: 800px;
+			background: #ccc;
+			margin:0 auto;
+		}
+		section .box1
+		{
+			width: 240px;
+			height: 400px;
+			background: #ffc;
+			float:left;
+			margin-right:40px;
+		}
+		section .box2
+		{
+			width: 240px;
+			height: 400px;
+			background: #ffc;
+			float:left;
+			margin-right:40px;
+		}
+		section .box3
+		{
+			width: 240px;
+			height: 400px;
+			background: #ffc;
+			float:left;
+			margin-right:0px;
+		}
+		footer
+		{
+			width: 800px;
+			height: 100px;
+			background: #00f;
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		header
+	</header>
+	<section>
+		<div class="wrap">
+			<div class="box1">box1</div>
+			<div class="box2">box2</div>
+			<div class="box3">box3</div>
+		</div>
+	</section>
+	<footer>
+		footer
+	</footer>
+</body>
+</html>

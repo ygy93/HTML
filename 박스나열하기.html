@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스나열하기</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+		header /* , footer 를 넣어서 활용 가능 */
+		{
+			width: 700px;
+			height: 100px;
+			background: #cff;
+			margin:0 auto; /* 박스 정렬 */
+		}
+		section
+		{
+			width: 700px;
+			background: #ffc;
+			margin:0 auto;
+		}
+		section:after
+		{
+			content:""; /* 필수속성 */
+			clear:both; /* 플룻 해제 */
+			display:block; /* 블록요소 강제변환 */
+		}
+		section div
+		{
+			width: 200px;
+			height: 200px;
+			background: #3ff;
+			/* display:inline-block; 여백이 생겨 정확한 수치를 주기 어려움 */
+			float:left;
+			margin-right:50px;
+		}
+		section .box3
+		{
+			margin-right:0;
+		}
+		/*
+		float 적용
+		1. 그 자리에서 뜬다.
+		2. 부모가 자식의 높이값을 인지하지 못한다.
+		3. 인라인 요소였다면 자동으로 블록요소로 바뀐다.
+		4. 너비와 높이를 지정하지 않으면 줄어든다.
+
+		float 해제
+		float 이 적용된 요소(div)의 직계부모(section)에게 after 를 적용
+		*/
+		footer
+		{
+			width: 700px;
+			height: 100px;
+			background: #ccc;
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		header
+	</header>
+	<section>
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box3">box3</div>
+	</section>
+	<footer>
+		footer
+	</footer>
+</body>
+</html>
