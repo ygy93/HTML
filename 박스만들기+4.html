@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스만들기 4</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+		header
+		{
+			width: 900px;
+			height: 200px;
+			background: #00f;
+			margin:0 auto;
+		}
+		section
+		{
+			width: 900px;
+			height: 625px;
+			background: #fcf;
+			margin:0 auto;
+		}
+		section:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		section div
+		{
+			width: 200px;
+			height: 200px;
+			background: #333;
+			float:left;
+			margin:75px 0px 0px 75px;
+		}
+		footer
+		{
+			width: 900px;
+			height: 150px;
+			background: #ccc;
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		header
+	</header>
+	<section>
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box3">box3</div>
+		<div class="box4">box4</div>
+		<div class="box5">box5</div>
+		<div class="box6">box6</div>
+	</section>
+	<footer>
+		footer
+	</footer>
+</body>
+</html>
