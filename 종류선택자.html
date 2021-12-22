@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>종류선택자</title>
+	<style>
+		section div:first-of-type
+		{
+			color:#f00;
+		}
+		section div:nth-of-type(3)
+		{
+			color:#00f;
+		}
+		section div:last-of-type
+		{
+			color:#ff0;
+		}
+		section p:last-of-type
+		{
+			background: #ff0;
+		}
+		section div:nth-of-type(2n)
+		{
+			font-size:36px;
+		}
+		/*
+		선택한 요소의 n번째
+		*/
+	</style>
+</head>
+<body>
+	<section>
+		<div>div</div>
+		<p>p</p>
+		<span>span</span>
+		<div>div</div>
+		<div>div</div>
+		<div>div</div>
+		<div>div</div>
+		<p>p</p>
+	</section>
+</body>
+</html>
