@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>선택자</title>
+	<style>
+		section div:first-child /* 요소와 순번 모두가 맞아야 값이 적용 */
+		{
+			color:#f00;
+		}
+		section p:nth-child(2)
+		{
+			color:#00f;
+		}
+		section div:nth-child(5)
+		{
+			color:#0f0;
+		}
+		section p:last-child
+		{
+			background: #ff0;
+		}
+		section div:nth-child(2n) /* Xn 배수 */
+		{
+			font-size:36px;
+		}
+		section div:nth-child(even) /* even : 짝수, odd : 홀수 */
+		{
+			font-weight:bold;
+		}
+		/*
+		nth-child 의 경우 요소와 순번이 일치해야 한다.
+		*/
+	</style>
+</head>
+<body>
+	<section>
+		<div>div</div>
+		<p>p</p>
+		<span>span</span>
+		<div>div</div>
+		<div>div</div>
+		<p>p</p>
+	</section>
+</body>
+</html>
