@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>링크</title>
+	<style>
+		/*
+		a
+		{
+			text-decoration: none;
+			color:#f00;
+		}
+		*/
+		a:link /* 방문하지 않은 링크 */
+		{
+			color:#060;
+			text-decoration:none;
+		}
+		
+		a:visited /* 방문한 링크 */
+		{
+			color:#fcf;
+		}
+
+		a:hover /* 마우스 커서 올라갔을 때 */
+		{
+			color:#cff;
+		}
+
+		a:active /* 마우스 클릭 중 */
+		{
+			color:#f00;
+		}
+
+		a:focus /* TAB 키를 사용한 커서가 적용됐을 때 */
+		{
+			color:#ff0;
+		}
+
+
+		/* 여러 개 동시 적용 가능 */ 
+		a:link, a:visited
+		{
+			color:#f00;
+			transition:0.1s; /* 스르륵 효과 */
+		}
+
+		a:hover, a:active, a:focus
+		{
+			color:#0f0;
+		}
+	</style>
+</head>
+<body>
+	<a href="http://naver.com">네이버로 바로가기</a><br>
+	<a href="http://daum.net">다음으로 바로가기</a><br>
+	<a href="http://google.com" target="_blank">구글로 바로가기(새창)</a><br>
+	<a href="http://nate.com" target="_blank">네이트로 바로가기(새창)</a><br>
+
+	<a href="https://sports.news.naver.com/news?oid=343&aid=0000109559" target="_blank">리버풀, '역대급 딜'로 도르트문트 월클 노린다…홀란드는 포기</a><br>
+	<a href="https://sports.news.naver.com/news?oid=311&aid=0001383397" target="_blank">'해버지' 박지성, 손흥민 맨유행?..."한 가지 걸림돌, 7번 셔츠"</a><br>
+
+	<a href="https://sports.news.naver.com/news?oid=056&aid=0011172646" target="_blank"><img src="https://imgnews.pstatic.net/image/056/2021/12/09/0011172646_001_20211209150301200.jpg?type=w647" alt="키움 푸이그 영입"></a><br>
+	<!--
+	파란색 : 최근 방문하지 않은 링크
+	보라색 : 최근 방문한 링크
+	-->
+
+	<a href="목록요소.html" target="_blank">목록페이지로 이동하기</a>
+	<a href="img/이미지.html">이미지페이지로 이동</a>
+
+
+</body>
+</html>
