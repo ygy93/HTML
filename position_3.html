@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		h1
+		{
+			background: #fcf;
+		}
+		p
+		{
+			background: #ff0;
+		}
+		.t1
+		{
+			position: relative;
+			left:30px;
+			top:100px;
+		}
+		.t2
+		{
+			position: relative;
+			right:10px;
+			bottom:20px;
+		}
+		/*
+		position: rlative; 상대적인 좌표
+		1. 해당요소는 그 자리에서 뜬다.
+		2. 너비 높이도 그대로 유지
+		3. 좌표를 주면 해당위치가 기준
+		4. 자기자리를 유지한다, 동생요소가 치고 올라오지 못한다.
+		*/
+	</style>
+</head>
+<body>
+	<h1>position - relative</h1>
+	<p class="t1">첫번째 p</p>
+	<p class="t2">두번째 p</p>
+	<p class="t3">세번째 p</p>
+	<p class="t4">네번째 p</p>
+</body>
+</html>
