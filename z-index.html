@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>z-index</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		div
+		{
+			width: 100px;
+			height: 100px;
+		}
+		.box1
+		{
+			background: #f00;
+			position: absolute;
+			left:50px;
+			top:50px;
+			z-index:2;
+		}
+		.box2
+		{
+			background: #0f0;
+			position: absolute;
+			left:70px;
+			top:70px;
+			z-index:1;
+		}
+		.box3
+		{
+			background: #00f;
+			position: absolute;
+			left:90px;
+			top:90px;
+			z-index:1;
+		}
+		/*
+		1. 해당 요소는 그 자리에서 뜬다.
+		2. 동생요소가 그 자리를 차지한다.
+		3. 부모요소는 자식의 높이값을 인지하지 못한다.
+		4. 너비가 없다면 줄어든다.
+		5. 만약에 인라인 요소라면 자동으로 블록요소로 변경된다.
+		6. 좌표를 주면 body 를 기준으로 이동한다.
+
+		z-index : 반드시 position 과 같이 사용
+		숫자가 높을수록 위로 배치
+		*/
+	</style>
+</head>
+<body>
+	<h1>z-index</h1>
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+
+</body>
+</html>
