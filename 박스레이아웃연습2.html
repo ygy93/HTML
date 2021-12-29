@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스레이아웃연습2</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		header
+		{
+			width: 900px;
+			height: 200px;
+			background: #fcf;
+			margin:0 auto;
+		}
+		section
+		{
+			width: 900px;
+			height: 625px;
+			background: #f00;
+			margin:0 auto;
+			position: relative;
+		}
+		/*
+		section:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		*/
+		section div
+		{
+			width: 200px;
+			height: 200px;
+			background: #00f;
+			/*margin:75px 0 0 75px;
+			float:left;*/
+			position: absolute;
+		}
+		section div:first-of-type
+		{
+			left:75px;
+			top:75px;
+		}
+		section div:nth-of-type(2)
+		{
+			top:75px;
+			left:350px;
+		}
+		section div:nth-of-type(3)
+		{
+			top:75px;
+			right:75px;
+		}
+		section div:nth-of-type(4)
+		{
+			bottom:75px;
+			left:75px;
+		}
+		section div:nth-of-type(5)
+		{
+			bottom:75px;
+			left:350px;
+		}
+		section div:last-of-type
+		{
+			bottom:75px;
+			right:75px;
+		}
+		footer
+		{
+			width: 900px;
+			height: 150px;
+			background: #cfc;
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		header
+	</header>
+	<section>
+		<div>box1</div>
+		<div>box2</div>
+		<div>box3</div>
+		<div>box4</div>
+		<div>box5</div>
+		<div>box6</div>
+	</section>
+	<footer>
+		footer
+	</footer>
+</body>
+</html>

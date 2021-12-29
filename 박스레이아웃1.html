@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스레이아웃1</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		header
+		{
+			width: 700px;
+			height: 100px;
+			margin:0 auto;
+			background: #cfc;
+		}
+		section
+		{
+			width: 700px;
+			margin:0 auto;
+			background: #ffc;
+			height: 200px; /* 포지션의 경우 부모에게 높이값을 반드시 지정 */
+			position: relative;
+		}
+		section div
+		{
+			background: #fcf;
+			width: 200px;
+			height: 200px;
+		}
+		section div:nth-of-type(2)
+		{
+			position: absolute;
+			left:250px;
+			top:0;
+		}
+		section div:last-of-type
+		{
+			position: absolute;
+			right:0;
+			top:0;
+		}
+		/*
+		section div
+		{
+			background: #cff;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+		}
+		section div:nth-child(1)
+		{
+			left:0;
+			top:0;
+		}
+		section div:nth-child(2)
+		{
+			left:250px;
+		}
+		section div:nth-child(3)
+		{
+			right:0;
+			top:0;
+		}
+		*/
+		/*
+		section:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		section div
+		{
+			width: 200px;
+			height: 200px;
+			background: #cff;
+			float:left;
+			margin-right:50px;
+		}
+		section div:last-child
+		{
+			margin-right:0;
+		}
+		*/
+		footer
+		{
+			width: 700px;
+			height: 100px;
+			margin:0 auto;
+			background: #ccc;
+		}
+		/*
+		1. 부모에게 높이값을 반드시 지정
+		2. 부모 영역안에 가둬두기 위해 position:relative
+		3. 모든 요소에 좌표를 지정
+		*/
+	</style>
+</head>
+<body>
+	<header>
+		header
+	</header>
+	<section>
+		<div>box1</div>
+		<div>box2</div>
+		<div>box3</div>
+	</section>
+	<footer>
+		footer
+	</footer>
+</body>
+</html>
