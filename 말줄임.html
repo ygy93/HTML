@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>말줄임</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		ul
+		{
+			background: #ccc;
+			width: 200px;
+		}
+		ul li
+		{
+			background: #ffc;
+			margin-bottom:10px;
+			white-space:nowrap; /* 줄바꿈 적용 안됨 */
+			overflow:hidden; /* 흘러넘치는 내용을 숨김 */
+			text-overflow:ellipsis; /* ... 으로 표기 */
+		}
+		p
+		{
+			background: #cfc;
+			width: 200px;
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		span
+		{
+			background: #fcf;
+			width: 200px;
+			overflow:hidden;
+			text-overflow:ellipsis;
+			/*display:block;*/
+			overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+		}
+	</style>
+</head>
+<body>
+	<h1>말줄임</h1>
+	<ul>
+		<li>안녕하세요. 만나서 반갑습니다.</li>
+		<li>아침에는 비가 왔는데 지금은 날씨가 개었습니다.</li>
+	</ul>
+
+	<p>안녕하세요. 만나서 반갑습니다.</p>
+	<span>안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.안녕하세요. 만나서 반갑습니다.</span>
+</body>
+</html>
