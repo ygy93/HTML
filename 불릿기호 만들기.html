@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>불릿기호 만들기</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		ul
+		{
+			margin-left: 100px;
+			background: #cff;
+			width: 300px;
+		}
+		ul li
+		{
+			list-style: none; /* 불릿기호 제거 */
+			position: relative;
+			padding-left: 10px;
+		}
+		ul li:before
+		{
+			content:"-";
+			position: absolute;
+			left:0;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>안녕하세요 만나서 반갑습니다.</li>
+		<li>안녕하세요 만나서 반갑습니다. 아침에 비가 왔습니다.</li>
+	</ul>
+</body>
+</html>
