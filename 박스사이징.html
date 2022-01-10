@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+		section
+		{
+			background: #ccc;
+			width: 700px;
+			margin:0 auto;
+		}
+		section:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		section div
+		{
+			width: 200px;
+			height: 200px;
+			margin-right:50px;
+			background: #fcf;
+			float:left;
+			border:3px solid #f00;
+			padding:20px;
+			box-sizing:border-box;
+		}
+		section div:last-of-type
+		{
+			margin-right:0;
+		}
+		/*
+		border-box
+		전체너비 = 콘텐츠너비 + 좌우너비 + 좌우패딩 + 좌우마진
+		전체너비 = 콘텐츠너비(좌우보더, 좌우패딩 포함) + 좌우마진
+		*/
+	</style>
+</head>
+<body>
+	<h1>박스사이징</h1>
+	<section>
+		<div>box1</div>
+		<div>box2</div>
+		<div>box3</div>
+	</section>
+</body>
+</html>
