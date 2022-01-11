@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		.text1
+		{
+			width: 200px;
+			height: 200px;
+			background: #ffc;
+			margin:0 auto;
+			text-align:center;
+			line-height:200px; /* 텍스트가 1줄일 경우 상하 가운데로 맞춰준다. */ /* height 와 line-height 높이를 같게 해줘야 한다. */
+
+			/*padding-top: 90px;
+			box-sizing:border-box;
+			vertical-align:middle;*/
+		}
+		.text2
+		{
+			width: 200px;
+			height: 200px;
+			background: #cff;
+			margin:0 auto;
+			display:flex;
+			justify-content:center; /* 텍스트가 2줄이상일 경우 (가로) */
+			align-items:center; /* 세로 */
+			text-align:center; /* 가운데 정렬 */
+		}
+		.text3
+		{
+			width: 200px;
+			height: 200px;
+			background: #fcf;
+			margin:0 auto;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			flex-direction:column; /* 세로로 요소들을 묶어주고 싶을 때 */
+			line-height:1.8;
+		}
+		.text3 p:last-of-type
+		{
+			margin-top:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="text1">한줄짜리 텍스트</div>
+	<div class="text2">두줄이상<br> 텍스트</div>
+	<div class="text3">
+		<p>여러개의</p>
+		<p>요소가</p>
+		<p>있을때</p>
+	</div>
+</body>
+</html>
