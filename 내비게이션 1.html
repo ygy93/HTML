@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내비게이션 1</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		header
+		{
+			
+		}
+		header .wrap
+		{
+			width: 900px;
+			margin:0 auto;
+		}
+		header h1
+		{
+			text-align:center; /* a 는 인라인요소 이므로 부모에게 text-align 를 줘야 텍스트가 가운데 정렬 */
+			height: 60px;
+			line-height:60px; /* 텍스트 가운데정렬 */
+		}
+		header h1 a
+		{
+			color:#333;
+			text-decoration:none; /* 밑줄 제거 */
+		}
+		header ul:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		header ul li
+		{
+			background: #ccc;
+			list-style:none;
+			float:left;
+			width: 150px;
+			height: 40px;
+			text-align:center;
+			line-height:40px;
+		}
+		header ul li a
+		{
+			background: #cff;
+			color:#333;
+			text-decoration:none;
+			text-transform: uppercase; /* 대문자 */
+			font-weight:bold;
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1>
+				<a href="#">LOGO</a> <!-- a 링크 -->
+			</h1>
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+				<li><a href="#">menu6</a></li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
