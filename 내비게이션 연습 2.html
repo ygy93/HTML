@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내비게이션 연습 2</title>
+	<style>
+		@font-face 
+		{
+			font-family: 'SEBANG_Gothic_Bold';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		* { margin: 0; padding: 0; }
+
+		body
+		{
+			font-family: 'SEBANG_Gothic_Bold';
+			font-size:14px
+		}
+
+		header .wrap
+		{
+			background: #f00;
+			width: 900px;
+			margin:0 auto;
+		}
+
+		header h1
+		{
+			height: 60px;
+			background: #cfc;
+			text-align:center;
+			line-height:60px;
+		}
+
+		header h1 a
+		{
+			color:#fcf;
+			text-decoration:none;
+		}
+
+		header ul:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		header ul li
+		{
+			list-style:none;
+			float:left;
+		}
+
+		header ul li a:link, header ul li a:visited
+		{
+			color:#aaa;
+			background: #e5e5e5;
+			width: 150px;
+			height: 40px;
+			line-height:40px;
+			display:block;
+			text-align:center;
+			text-decoration:none;
+		}
+
+		header ul li a:hover, header ul li a:active, header ul li a:focus
+		{
+			color:#333;
+			background: #ddd;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1>
+				<a href="#">LOGO</a>
+			</h1>
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+				<li><a href="#">MENU6</a></li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>

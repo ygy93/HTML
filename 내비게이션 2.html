@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내비게이션 2</title>
+	<style>
+		@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+		* { margin: 0; padding: 0; }
+
+		body
+		{
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size:14px;
+		}
+
+		header
+		{
+			background: #eee;
+		}
+
+		header .wrap
+		{
+			background: #ccc;
+			width: 900px;
+			margin:0 auto;
+		}
+
+		h1
+		{
+			background: #ffc;
+			font-size:32px;
+			text-align:center;
+			height:60px;
+			line-height:60px; /* 원래 a (앵커) 에 줘야 하지만 글자는 상속을 받을 수 있으므로 a 에 안줘도 됨 */
+			/*color:inherit; /* 상속을 못 받는것을 강제로 상속 받을 수 있게 해줌. */
+		}
+
+		h1 a
+		{
+			background: #fcf;
+			color:#333;
+			text-decoration:none;
+		}
+
+		header #gnb:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		header #gnb li
+		{
+			list-style:none;
+			float:left;
+		}
+
+		header #gnb li a:link, header #gnb li a:visited /* 마우스 커서 올리면 색상 변경 */
+		{
+			background: #cff;
+			width: 150px;
+			height: 40px;
+			display:block;
+			text-align:center;
+			line-height:40px;
+			text-decoration:none;
+			color:#333;
+			font-weight:bold;
+			transition:0.2s;
+		}
+
+		header #gnb li a:hover, header #gnb li a:active, header #gnb li a:focus
+		{
+			color:#ff0;
+			background: #00f;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1>
+				<a href="#">LOGO</a>
+			</h1>
+			<ul id="gnb">
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+				<li><a href="#">MENU6</a></li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
