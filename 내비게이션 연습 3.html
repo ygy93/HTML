@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내비게이션 연습 3</title>
+	<style>
+		@font-face 
+		{
+			font-family: 'LAB디지털';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		* { margin: 0; padding: 0; }
+
+		body
+		{
+			font-family: 'LAB디지털';
+			font-size:14px;
+		}
+
+		header .wrap
+		{
+			width: 960px;
+			margin:0 auto;
+		}
+
+		header h1
+		{
+			height: 100px;
+			line-height:100px;
+			text-align:center;
+		}
+
+		header h1 a
+		{
+			color:#cfc
+			text-decoration:none;
+			font-size:48px;
+		}
+
+		header ul:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		header ul li
+		{
+			background: #fcf;
+			list-style:none;
+			float:left;
+			border:1px solid #333;
+			/*box-sizing:border-box;*/
+			border-right:none;
+		}
+
+		header ul li:last-of-type
+		{
+			border-right:1px solid #333;
+		}
+
+		header ul li a:link, header ul li a:visited
+		{
+			width: 158px;
+			height: 38px;
+			display:block;
+			line-height:38px;
+			text-align:center;
+			text-decoration:none;
+			transition:0.2s;
+		}
+
+		header ul li a:hover, header ul li a:active, header ul li a:focus
+		{
+			color:#666;
+			background: #ddd;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1>
+				<a href="#">LOGO</a>
+			</h1>
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+				<li><a href="#">MENU6</a></li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
