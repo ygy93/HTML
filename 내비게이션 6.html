@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내비게이션 6</title>
+	<style>
+		* { margin: 0; padding: 0; }
+/* float 활용 */
+		li
+		{
+			list-style:none;
+		}
+
+		a
+		{
+			text-decoration:none;
+		}
+
+		.wrap
+		{
+			width: 1140px;
+			margin:0 auto;
+		}
+
+		header
+		{
+			background: #eee;
+		}
+
+		header .wrap:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		header h1
+		{
+			float:left;
+		}
+
+		header h1 a
+		{
+			line-height:100px;
+			font-size:48px;
+			color:#333;
+		}
+
+		header #snb
+		{
+			float:right;
+		}
+
+		header #snb:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		header #snb li
+		{
+			float:left;
+			margin-left:30px;
+			line-height:100px;
+		}
+
+		header #snb li a
+		{
+			color:#666;
+		}
+
+		header nav
+		{
+			background: #ff0;
+		}
+
+		header nav #gnb:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		header nav #gnb li
+		{
+			float:left;
+			width: 190px;
+			height: 40px;
+			border-left:1px solid #000;
+			box-sizing:border-box;
+		}
+
+		header nav #gnb li:last-of-type
+		{
+			border-right:1px solid #000;
+		}
+
+		header nav #gnb li a:link, header nav #gnb li a:visited
+		{
+			display:block;
+			line-height:40px;
+			text-align:center;
+			color:#333;
+			font-weight:bold;
+		}
+
+		header nav #gnb li a:hover, header nav #gnb li a:active, header nav #gnb li a:focus
+		{
+			background: #fcf;
+			color:#fff;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1>
+				<a href="#">LOGO</a>
+			</h1>
+			<ul id="snb">
+				<li>
+					<a href="#">JOIN</a>
+				</li>
+				<li>
+					<a href="#">LOGIN</a>
+				</li>
+				<li>
+					<a href="#">SITEMAP</a>
+				</li>
+			</ul>
+		</div>
+		<nav>
+			<ul id="gnb" class="wrap">
+				<li>
+					<a href="#">MENU1</a>
+				</li>
+				<li>
+					<a href="#">MENU2</a>
+				</li>
+				<li>
+					<a href="#">MENU3</a>
+				</li>
+				<li>
+					<a href="#">MENU4</a>
+				</li>
+				<li>
+					<a href="#">MENU5</a>
+				</li>
+				<li>
+					<a href="#">MENU6</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>

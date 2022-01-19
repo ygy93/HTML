@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내비게이션5</title>
+	<style>
+		* { margin: 0; padding: 0; }
+
+		li
+		{
+			list-style:none;
+		}
+
+		a
+		{
+			text-decoration:none;
+		}
+
+		.wrap
+		{
+			width: 960px;
+			margin:0 auto;
+		}
+
+		header
+		{
+			background: #eee;
+		}
+
+		header h1
+		{
+			background: #ffc;
+			text-align:center;
+		}
+
+		header h1 a
+		{
+			background: #fcf;
+			color:#333;
+			line-height:100px;
+		}
+
+		header nav
+		{
+			background: #cff;
+		}
+
+		header #gnb
+		{
+			background: #cfc;
+		}
+
+		header #gnb:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		header #gnb li
+		{
+			float:left;
+			width: 160px;
+			height: 40px;
+			border-left:1px solid #000;
+			box-sizing:border-box;
+		}
+
+		header #gnb li:last-of-type
+		{
+			border-right:1px solid #000;
+		}
+
+		header #gnb li a:link, header #gnb li a:visited
+		{
+			background: #fcf;
+			display:block;
+			text-align:center;
+			line-height: 40px;
+			color:#333;
+		}
+
+		header #gnb li a:hover, header #gnb li a:active, header #gnb li a:focus
+		{
+			background: #ccf;
+			color:#f00;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1 class="wrap">
+			<a href="#">LOGO</a>
+		</h1>
+		<nav>
+			<ul id="gnb" class="wrap">
+				<li>
+					<a href="#">MENU1</a>
+				</li>
+				<li>
+					<a href="#">MENU2</a>
+				</li>
+				<li>
+					<a href="#">MENU3</a>
+				</li>
+				<li>
+					<a href="#">MENU4</a>
+				</li>
+				<li>
+					<a href="#">MENU5</a>
+				</li>
+				<li>
+					<a href="#">MENU6</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
