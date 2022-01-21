@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내비게이션연습6</title>
+	<style>
+		* { margin: 0; padding: 0; }
+
+		li
+		{
+			list-style:none;
+		}
+		a
+		{
+			color:#333;
+			text-decoration:none;
+		}
+
+		header
+		{
+			background: #eee;
+			border-bottom:1px solid #333;
+		}
+
+		header .wrap
+		{
+			width: 960px;
+			height: 150px;
+			margin:0 auto;
+			position: relative;
+		}
+
+		header h1
+		{
+			line-height:150px;
+		}
+
+		header h1 a
+		{
+			font-size:60px;
+		}
+
+		.sub
+		{
+			position: absolute;
+			top:40px;
+			right:0;
+		}
+
+		.main
+		{
+			position: absolute;
+			bottom:40px; /* bottom 은 되도록 쓰지 않는것이 좋다. 서브 메뉴바가 나오게 하는 경우가 많기 때문. */
+			right:0;
+		}
+
+		.sub:after, .main:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		.sub li, .main li
+		{
+			float:left;
+			margin-left:30px;
+		}
+
+		.main li
+		{
+			margin-left:50px;
+			font-size:20px;
+			font-weight:bold;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap"> <!-- 웹창에서 TAB 키를 누르면 마크업 한 순서대로 내려가기 때문에 하나의 랩에 메뉴바가 들어갈 경우 중요한 순서대로 마크업 한다. -->
+			<h1><a href="#">LOGO</a></h1>
+			<ul class="sub">
+				<li><a href="#">JOIN</a></li>
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">SITEMAP</a></li>
+			</ul>
+			<ul class="main">
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+				<li><a href="#">MENU6</a></li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
