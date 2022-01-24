@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* { margin: 0; padding: 0; }
+
+		li
+		{
+			list-style: none;
+		}
+
+		a
+		{
+			color:#333;
+			text-decoration:none;
+		}
+
+		header
+		{
+			background: #eee;
+			border-bottom:1px solid #333;
+		}
+
+		.wrap
+		{
+			margin:0 auto;
+			width: 960px;
+			height: 150px;
+			position: relative;
+		}
+
+		h1
+		{
+			line-height:150px;
+			font-size:48px;
+		}
+
+		.main
+		{
+			position: absolute;
+			top:90px;
+			right:0;
+		}
+
+		.sub
+		{
+			position: absolute;
+			top:40px;
+			right:0;
+		}
+
+		.main:after, .sub:after
+		{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		.main li, .sub li
+		{
+			float:left;
+			margin-left:30px;
+		}
+
+		.main li
+		{
+			margin-left:50px;
+			font-weight:bold;
+			font-size:20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1>
+				<a href="#">LOGO</a>
+			</h1>
+			<ul class="main">
+				<li>
+					<a href="#">MENU1</a>
+				</li>
+				<li>
+					<a href="#">MENU2</a>
+				</li>
+				<li>
+					<a href="#">MENU3</a>
+				</li>
+				<li>
+					<a href="#">MENU4</a>
+				</li>
+				<li>
+					<a href="#">MENU5</a>
+				</li>
+				<li>
+					<a href="#">MENU6</a>
+				</li>
+			</ul>
+			<ul class="sub">
+				<li>
+					<a href="#">JOIN</a>
+				</li>
+				<li>
+					<a href="#">LOGIN</a>
+				</li>
+				<li>
+					<a href="#">SITEMAP</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
