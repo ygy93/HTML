@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>녹십자</title>
+	<style>
+		@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+		body {
+			font-family: 'NanumSquare';
+		}
+
+		* { margin: 0; padding: 0; }
+
+		li { list-style:none; }
+
+		a { text-decoration:none; color:#333; }
+
+		header {
+			border-bottom:1px solid #333;
+		}
+
+		.wrap {
+			width: 1160px;
+			height: 120px;
+			margin:0 auto;
+			position: relative;
+		}
+
+		.img {
+			padding-top:60px;
+		}
+
+		.main {
+			position: absolute;
+			top:72px;
+			right:0;
+		}
+
+		.sub {
+			position: absolute;
+			top:20px;
+			right:0;
+		}
+
+		.main:after, .sub:after {
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		.main li, .sub li {
+			float:left;
+		}
+
+		.main li {
+			margin-left:120px;
+			font-size:20px;
+			font-weight:bold;
+		}
+
+		.sub li {
+			font-size:14px;
+			border-left:1px solid #666;
+			padding:0 10px;
+			box-sizing:border-box;
+		}
+
+		.sub li:first-of-type {
+			border-left:0px;
+		}
+
+		.sub li:last-of-type {
+			padding-right:0px;
+		}
+
+		span {
+			color:#090;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<a href="#">
+			<img src="file:///C:/Users/user/Desktop/%ED%95%99%EC%9B%90/HTML%20%EA%B8%B0%EC%B4%88/%EB%85%B9%EC%8B%AD%EC%9E%90%20%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%B0%94%20%EC%A0%9C%EC%9E%91/images/logo.jpg" alt="LOGO" class="img">
+			</a>
+			<ul class="main">
+				<li>
+					<a href="#">기업소개</a>
+				</li>
+				<li>
+					<a href="#">연구개발</a>
+				</li>
+				<li>
+					<a href="#">제품정보</a>
+				</li>
+				<li>
+					<a href="#">투자정보</a>
+				</li>
+				<li>
+					<a href="#">기업홍보</a>
+				</li>
+			</ul>
+			<ul class="sub">
+				<li>
+					<a href="#">RECRUITING</a>
+				</li>
+				<li>
+					<a href="#">GLOBAL</a>
+				</li>
+				<li>
+					<a href="#">고객문의</a>
+				</li>
+				<li>
+					<a href="#"><span>제품판매약국찾기</span></a>
+				</li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
